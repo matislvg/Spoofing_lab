@@ -2,7 +2,11 @@
 
 Un outil "tout-en-un" en Python utilisant la bibliothèque **Scapy** pour simuler des attaques de niveau couche 2 (ARP) et couche 3 (ICMP), tout en capturant le trafic en temps réel pour analyser et détecter les menaces.
 
-Ce projet a été développé dans un but purement pédagogique pour illustrer la fragilité des protocoles réseau de base et comprendre les mécanismes de détection par signature.
+## 🎯 Contexte
+
+Ce projet a été réalisé dans le cadre d'un stage en cybersécurité à l'**Entente Valabre** au sein de la **Division Innovation et Prospective**.
+
+L'objectif était de comprendre concrètement les vulnérabilités des protocoles réseau de bas niveau (ARP, ICMP) en les reproduisant dans un environnement isolé, afin de mieux appréhender les mécanismes de détection utilisés dans les outils SIEM et IDS (Snort, Suricata, Wazuh).
 
 ## ✨ Fonctionnalités
 
