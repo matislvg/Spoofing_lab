@@ -16,6 +16,7 @@ Ce projet a été développé dans un but purement pédagogique pour illustrer l
 
 ### Prérequis
 Le script nécessite des privilèges d'administration (Root sur Linux, Administrateur sur Windows) pour forger et injecter des trames de couches 2 et 3.
+> **Windows uniquement :** Installez [Npcap](https://npcap.com) avant de lancer le script. Sans ce driver, Scapy ne peut pas forger de paquets.
 
 ### Dépendances
 Installez la bibliothèque Scapy :
@@ -54,6 +55,19 @@ sudo python3 spoofing_lab.py --mode send --target 192.168.56.102
 sudo python3 spoofing_lab.py --mode capture --duration 20
 
 ```
+
+## ⚙️ Arguments
+
+| Argument | Défaut | Description |
+|---|---|---|
+| `--mode` | `all` | Mode d'exécution : `send`, `capture`, `all` |
+| `--target` | `192.168.56.101` | IP de la machine cible |
+| `--spoof-ip` | `10.0.0.99` | IP source falsifiée pour l'ICMP |
+| `--iface` | Auto | Interface réseau |
+| `--count` | `10` | Nombre de paquets à envoyer |
+| `--duration` | `15` | Durée de la capture (secondes) |
+| `--pcap` | `capture_labo.pcap` | Fichier d'export PCAP |
+| `--verbose` | `False` | Affichage détaillé en temps réel |
 
 ## 📊 Preuve de Concept & Analyse Wireshark
 
