@@ -1,4 +1,8 @@
-*.pcap
+# Fichiers temporaires de Python
 __pycache__/
 *.pyc
 .python_history
+
+# Captures réseau
+*.pcap
+*.pcapng
