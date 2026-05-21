@@ -1,1 +1,4 @@
 *.pcap
+__pycache__/
+*.pyc
+.python_history
