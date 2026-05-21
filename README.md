@@ -79,7 +79,9 @@ L'outil génère un rapport de capture directement dans le terminal et exporte u
 
 Voici un aperçu visuel du trafic généré par le script et intercepté dans Wireshark :
 
-<img width="1916" height="1032" alt="Capture d&#39;écran 2026-05-21 094915" src="https://github.com/user-attachments/assets/e6e2c5d3-e76f-42d7-88b2-8321ea78a5a5" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e6e2c5d3-e76f-42d7-88b2-8321ea78a5a5" alt="Analyse Wireshark du Labo" width="95%" />
+</p>
 
 * **Zone Rose :** Paquets ICMP falsifiés provenant de la source `10.0.0.99` avec un identifiant marqué `0xdead`.
 * **Zone Jaune :** Storm de requêtes ARP générant des adresses MAC et des adresses sources séquentielles (`10.0.0.x`).
