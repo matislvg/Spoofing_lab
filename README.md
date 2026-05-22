@@ -80,7 +80,7 @@ L'outil génère un rapport de capture directement dans le terminal et exporte u
 Voici un aperçu visuel du trafic généré par le script et intercepté dans Wireshark :
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e6e2c5d3-e76f-42d7-88b2-8321ea78a5a5" alt="Analyse Wireshark du Labo" width="95%" />
+  <img src="images/SIEM_module3_icmp.Wireshark_spoofing.png" alt="Capture d'écran Wireshark résultat" width="600">
 </p>
 
 * **Zone Rose :** Paquets ICMP falsifiés provenant de la source `10.0.0.99` avec un identifiant marqué `0xdead`.
