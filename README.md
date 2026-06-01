@@ -1,6 +1,6 @@
 # 🛡️ Scapy Spoofing & Sniffing Lab
 
-Un outil "tout-en-un" en Python utilisant la bibliothèque **Scapy** pour simuler des attaques de niveau couche 2 (ARP) et couche 3 (ICMP), tout en capturant le trafic en temps réel pour analyser et détecter les menaces.
+Un laboratoire Python utilisant **Scapy** pour simuler des attaques réseau de couche 2 (ARP) et couche 3 (ICMP), avec capture du trafic en temps réel pour l'analyse et la détection de menaces.
 
 ## 🎯 Contexte
 
@@ -19,8 +19,9 @@ L'objectif était de comprendre concrètement les vulnérabilités des protocole
 ## 🚀 Installation & Prérequis
 
 ### Prérequis
-Le script nécessite des privilèges d'administration (Root sur Linux, Administrateur sur Windows) pour forger et injecter des trames de couches 2 et 3.
-> **Windows uniquement :** Installez [Npcap](https://npcap.com) avant de lancer le script. Sans ce driver, Scapy ne peut pas forger de paquets.
+Le script nécessite des privilèges d'administration (root sur Linux, Administrateur sur Windows) pour forger et injecter des trames réseau.
+
+> ⚠️ **Windows uniquement :** Le driver [Npcap](https://npcap.com) est **obligatoire** avant tout lancement. Sans lui, Scapy ne peut pas accéder aux couches réseau basses.
 
 ### Dépendances
 Installez la bibliothèque Scapy :
@@ -73,9 +74,9 @@ sudo python3 spoofing_lab.py --mode capture --duration 20
 | `--pcap` | `capture_labo.pcap` | Fichier d'export PCAP |
 | `--verbose` | `False` | Affichage détaillé en temps réel |
 
-## 📊 Preuve de Concept & Analyse Wireshark
+## 📊 Résultats & Analyse Wireshark
 
-L'outil génère un rapport de capture directement dans le terminal et exporte un fichier `capture_labo.pcap`.
+Le script génère un résumé de capture dans le terminal et exporte un fichier `capture_labo.pcap` analysable sous Wireshark.
 
 Voici un aperçu visuel du trafic généré par le script et intercepté dans Wireshark :
 
@@ -88,6 +89,7 @@ Voici un aperçu visuel du trafic généré par le script et intercepté dans Wi
 
 
 
-## ⚠️ Avertissement Légal (Disclaimer)
+## ⚠️ Avertissement légal
 
-Cet outil est fourni uniquement à des fins éducatives et de recherche en isolation (environnement de laboratoire, machines virtuelles host-only). L'auteur décline toute responsabilité en cas d'usage malveillant ou hors d'un cadre autorisé.
+Cet outil est développé à des fins **éducatives et de recherche en environnement isolé** (machines virtuelles en réseau host-only).  Toute utilisation sur un réseau sans autorisation explicite de son propriétaire est **strictement interdite** et peut constituer une infraction pénale (article 323-1 du Code pénal français).  
+L'auteur décline toute responsabilité quant à une utilisation hors cadre autorisé.
